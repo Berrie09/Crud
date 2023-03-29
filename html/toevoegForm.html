@@ -1,0 +1,62 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+
+
+
+  <div class="testbox">
+    <form name="agendaFormulier" method="post" action="../php/toevoegVerwerk.php">
+      <div class="banner">
+        <h1>Agenda gegevens</h1>
+      </div>
+      <br />
+      <fieldset>
+        <legend>Gegevens</legend>
+        <p>Wat wil je toevoegen?</p>
+        <div class="item">
+          <label for="onderwerpVeld">Onderwerp <span>*</span></label>
+          <input placeholder="steekwoord(en)" name="onderwerpVeld" type="text" name="onderwerpVeld" required />
+        </div>
+        <div class="item">
+          <label for="inhoudVeld">Inhoud <span>*</span></label>
+          <input placeholder="Wat wil je precies onthouden?" id="inhoudVeld" type="text" name="inhoudVeld" required />
+        </div>
+        <div class="item">
+          <label for="begindatumVeld">Begindatum <span>*</span></label>
+          <input placeholder="Wanneer gaat het beginnen?" id="begindatumVeld" type="date" name="begindatumVeld"
+            required />
+          <i class="fas fa-calendar-alt"></i>
+        </div>
+        <div class="item">
+          <label for="einddatumVeld">Einddatum <span>*</span></label>
+          <input placeholder="Wanneer eindigt het?" id="einddatumVeld" type="date" name="einddatumVeld" required />
+          <i class="fas fa-calendar-alt"></i>
+        </div>
+
+        <div class="item">
+          <label for="prioriteitVeld">Prioriteit<span>*</span></label>
+          <input placeholder="Hoe belangrijk is het? (1-5)" id="prioriteitVeld" type="number" name="prioriteitVeld"
+            required min="1" max="5" />
+        </div>
+
+
+        <div class="btn-block">
+          <button name="verzend" type="submit">Toevoegen</button>
+
+        </div>
+    </form>
+  </div>
+</body>
+
+</html>
